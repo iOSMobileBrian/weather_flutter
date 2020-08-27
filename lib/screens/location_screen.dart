@@ -74,3 +74,15 @@ class _LocationScreenState extends State<LocationScreen> {
     );
   }
 }
+
+/*double longitude = decodedData['coord']['lon'];
+String weatherDescription = decodedData['weather'][0]['description'];
+String name = decodedData['name'];
+int id = decodedData['weather'][0]['id'];
+
+print('lon: $longitude');
+print('description: $weatherDescription');
+print('city: $name');
+print('id: $id');
+
+ */
