@@ -42,11 +42,15 @@ class _CityScreenState extends State<CityScreen> {
                   decoration: kTextFieldDecorationInput,
                   onChanged: (value){
                     print(value);
+                    cityName = value;
                   },
                 ),
               ),
               FlatButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pop(context,cityName);
+
+                },
                 child: Text(
                   'Get Weather',
                   style: kButtonTextStyle,
